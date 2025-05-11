@@ -1,0 +1,235 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: rgb(21, 20, 19);
+    
+}
+
+body {
+    background-image: linear-gradient(rgb(153, 250, 27), rgb(246, 199, 106));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+}
+.container {
+    margin: 2% 5%;
+}
+
+header {
+    display: flex;
+    height: 15vh;
+}
+
+header img {
+    margin-right: auto;
+    transition: 1.5s;
+}
+
+header img:hover {
+    transform: rotate3d(0, 0, 10, 360deg);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+nav ul li {
+    border: white 0px solid;
+    padding: 2px;
+    border-radius: 20px;
+    opacity: .8;
+    font-size: 1.7rem;
+    transition: .6s;
+}
+
+nav ul li:hover {
+    transform: scale(1.25);
+    margin-left: 10px;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+main img {
+    border-radius: 20px;
+    margin-right: 2rem;
+}
+
+@media (max-width: 750px) {
+    main img {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+main section {
+    width: 80%;
+    padding: .5%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    display: flex;
+    height: 10vh;
+    transition: .6s;
+}
+footer a:hover {
+    transform: scale(1.25);
+}
+
+.tog-but {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tog-but .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.drop-nav {
+    display: none;
+}
+
+
+.container-serv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.list-head {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.servicios-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicios-list li {
+    margin: 20px;
+    box-shadow: 5px 5px 15px grey;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.servicios-list img {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1300px) {
+    .servicios-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios-list li {
+        margin: 0px auto;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    header {
+        display: flex;
+    }
+    .drop-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .drop-nav ul {
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        
+    }
+    .drop-nav a {
+        display: flex;
+    }
+    
+}
+
+.container-about {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-about-me {
+    background-image: url(../img/veggies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px grey;
+    border-radius: 10px;
+
+}
+
+.about-us {
+    padding: 1rem;
+    max-width: 550px;
+    margin: 3rem 5rem;
+    background-color: rgb(238, 236, 236, .7);
+    border-radius: 20px;
+    padding: 2%;
+    text-align: justify;
+
+}
+.about-us h1{
+    text-align: center;
+    padding-bottom: 10%;
+
+}
